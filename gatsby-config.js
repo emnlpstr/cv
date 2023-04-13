@@ -4,7 +4,7 @@
 module.exports = {
   siteMetadata: {
     title: `cv`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: ["gatsby-plugin-styled-components", "gatsby-plugin-sitemap"]
+  plugins: ["gatsby-plugin-styled-components", "gatsby-plugin-sitemap"],
 };
