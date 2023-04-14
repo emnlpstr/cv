@@ -15,7 +15,7 @@ export const ButtonStyle = styled.button`
 
   &:hover {
     transition: 0.3s ease;
-    background: #A86847;
+    background: #a86847;
   }
 `;
 
@@ -29,7 +29,7 @@ export const ButtonLoginStyle = styled.button`
   transition: 0.3s ease;
 
   &:hover {
-    background: #F2f3f5;
+    background: #f2f3f5;
     transition: 0.3s ease;
   }
 
@@ -39,19 +39,5 @@ export const ButtonLoginStyle = styled.button`
     path {
       fill: "#3D2A26";
     }
-  }
-
-  .user-form {
-    display: none;
-    gap: 40px;
-    position: absolute;
-    width: 100%;
-    left: 0;
-    bottom: -45px;
-    padding: 12px 24px;
-    background: #e5e8ee;
-    cursor: default;
-    display: flex;
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
   }
 `;

@@ -4,6 +4,7 @@ import "./styles.css";
 import { Container } from "../components/style/Container.style";
 import { FlexWrapper } from "../components/style/FlexWrapper";
 import LoginButton from "../components/LoginButton/LoginButton";
+import EditBtn from "../components/EditButton/EditButton";
 
 const header = {
   padding: "20px 0",
@@ -24,7 +25,7 @@ const title = {
 
 const content = {
   background: "#E5E8EE",
-}
+};
 
 const HomeLayout = ({ children }) => {
   return (
@@ -35,11 +36,14 @@ const HomeLayout = ({ children }) => {
             <Link style={title} to="/">
               My portfolio
             </Link>
-            <LoginButton/>
+            <LoginButton />
           </FlexWrapper>
         </Container>
       </header>
-      <main style={content}>{children}</main>
+      <main style={content}>
+        {children}
+        <EditBtn />
+      </main>
     </React.Fragment>
   );
 };
