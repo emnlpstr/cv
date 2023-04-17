@@ -1,13 +1,12 @@
-import React, { useState, useRef, useContext, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import { ButtonStyle, ButtonLoginStyle } from "../style/Button.style";
-import Input from "../Input/Input";
+import { Input } from "../Input/Input";
 import { Backdrop } from "../style/Backdrop.style";
 import { LoginWrapper } from "../style/LoginWrapper";
 import { EditContext } from "../../context/editContext/editContext";
 
 const LoginButton = () => {
   const [isOpened, setIsOpened] = useState(false);
-  const loginBtn = useRef();
 
   const closeHandler = () => {
     setIsOpened(false);
@@ -21,7 +20,7 @@ const LoginButton = () => {
 
   return (
     <LoginWrapper>
-      <ButtonLoginStyle onClick={() => openHandler()} ref={loginBtn}>
+      <ButtonLoginStyle onClick={() => openHandler()}>
         <svg
           className="icon"
           version="1.1"
@@ -36,16 +35,8 @@ const LoginButton = () => {
         <>
           <Backdrop onClick={() => closeHandler()} />
           <div className="user-form">
-            <Input
-              id="username-login"
-              placeholder="username"
-              type="text"
-            ></Input>
-            <Input
-              id="password-login"
-              placeholder="Password"
-              type="password"
-            ></Input>
+            <Input id="username-login" placeholder="username" type="text" />
+            <Input id="password-login" placeholder="Password" type="password" />
             <ButtonStyle onClick={() => setEdit(true)}>Login</ButtonStyle>
             <ButtonStyle onClick={() => setEdit(false)}>Logout</ButtonStyle>
           </div>

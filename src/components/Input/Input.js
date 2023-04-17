@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { InputWrapper } from "./Input.style";
 
-const Input = ({ id, placeholder, value, type }) => {
+export const Input = ({ id, placeholder, value, type, disabled }) => {
   const [typeMod, setTypeMod] = useState(type);
 
   const eyeBtn = {
@@ -20,15 +20,16 @@ const Input = ({ id, placeholder, value, type }) => {
 
   return (
     <InputWrapper>
-      <label for={id} className="sr-only">
-        username
+      <label htmlFor={id} className="sr-only">
+        {placeholder}
       </label>
       <input
         id={id}
         type={typeMod}
         placeholder={placeholder}
         value={value}
-      ></input>
+        disabled={disabled}
+      />
       {type === "password" && (
         <button style={eyeBtn} onClick={() => handleEye()}>
           {typeMod === "password" ? (
@@ -59,5 +60,3 @@ const Input = ({ id, placeholder, value, type }) => {
     </InputWrapper>
   );
 };
-
-export default Input;

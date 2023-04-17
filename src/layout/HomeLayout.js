@@ -20,7 +20,7 @@ const title = {
   fontSize: "36px",
   fontWeight: "700",
   textDecoration: "none",
-  color: "#3D2A26",
+  color: "rgb(191, 118, 80)",
 };
 
 const content = {
@@ -34,7 +34,7 @@ const HomeLayout = ({ children }) => {
         <Container>
           <FlexWrapper spaceBetween>
             <Link style={title} to="/">
-              My portfolio
+              Emanuel Pistarà
             </Link>
             <LoginButton />
           </FlexWrapper>

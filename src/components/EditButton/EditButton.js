@@ -8,7 +8,7 @@ const EditBtn = () => {
   const { editing, setEditing } = useContext(EditingContext);
 
   const editBtn = {
-    background: editing ? "rgb(191, 118, 80)" : "#6fbf50",
+    background: editing ? "#6fbf50" : "rgb(191, 118, 80)",
     position: "fixed",
     right: "5%",
     top: "200px",
