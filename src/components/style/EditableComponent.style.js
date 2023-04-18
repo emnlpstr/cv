@@ -35,11 +35,19 @@ export const EditableComponent = styled.div`
       border: none;
       font-family: "Titillium Web", sans-serif;
       font-style: italic;
-      border-bottom: 1px solid rgb(53, 20, 7);
+      border-bottom: ${(props) =>
+        props.whiteText ? "1px solid rgb(245, 238, 214)" : "none"};
       font-weight: 300;
       width: 100%;
       color: ${(props) =>
         props.whiteText ? "rgb(245, 238, 214)" : "rgb(53, 20, 7)"};
+      box-shadow: ${(props) =>
+        props.whiteText ? "none" : "rgba(53, 20, 7, 0.2) 0px 0px 13px -2px"};
+      border-radius: ${(props) =>
+        props.whiteText ? "0" : "4px"};
+      background: ${(props) =>
+        props.whiteText ? "none" : "#fff"};
+
       &[readonly] {
         font-style: normal;
         background: none;
@@ -49,6 +57,7 @@ export const EditableComponent = styled.div`
         font-weight: 400;
         color: ${(props) =>
           props.whiteText ? "rgb(245, 238, 214)" : "rgb(53, 20, 7)"};
+        box-shadow: none;
       }
     }
 
@@ -82,8 +91,15 @@ export const EditableComponent = styled.div`
 
       input {
         width: 52px;
+        box-shadow: rgba(53, 20, 7, 0.2) 0px 0px 13px -2px;
+        background: #fff;
+        border: none;
+        border-radius: 4px;
+
         &[readonly] {
           font-weight: 700;
+          background: none;
+          box-shadow: none;
         }
       }
     }
