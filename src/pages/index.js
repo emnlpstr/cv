@@ -1,5 +1,7 @@
 import * as React from "react";
-import { Home } from "./home";
+import Home from "./home";
+
+const isBrowser = typeof window !== "undefined";
 
 const IndexPage = () => {
   return <Home />;

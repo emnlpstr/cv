@@ -13,7 +13,6 @@ import { Skills } from "../components/Skills/Skills";
 import { DataContext } from "../context/dataContext/dataContext";
 import { MainWrapper } from "../components/style/MainWrapper.style";
 import { ProfilePicture } from "../components/ProfilePicture/ProfilePicture";
-import { FooterBtn } from "../components/FooterBtn/FooterBtn";
 
 const mainWrapper = {
   display: "flex",
@@ -21,7 +20,7 @@ const mainWrapper = {
 
 const aside = {
   flexBasis: "30%",
-  background: "rgb(142, 60, 33)",
+  background: "#bf7650",
   minHeight: "100%",
 };
 
@@ -38,12 +37,9 @@ const sectionWrapper = {
   scrollBehavior: "smooth",
 };
 
-const footerWrapper = {};
-
-export const Home = () => {
+const Home = () => {
   const [edit, setEdit] = useState(false);
   const [editing, setEditing] = useState(false);
-  const [dataDefault, setDataDefault] = useState(homeContent);
   const [dataContext, setDataContext] = useState(homeContent);
 
   const imagePath = "../images/ep_cv_pic.jpg";
@@ -84,9 +80,6 @@ export const Home = () => {
                   <section id="skills" style={sectionWrapper}>
                     <Skills content={homeContent.skills} />
                   </section>
-                  <section id="footer-btn" style={footerWrapper}>
-                    <FooterBtn dataDefault={dataDefault} setDataContext={setDataContext}/>
-                  </section>
                 </div>
               </MainWrapper>
             </Container>
@@ -97,3 +90,5 @@ export const Home = () => {
     </EditingContext.Provider>
   );
 };
+
+export default Home;
