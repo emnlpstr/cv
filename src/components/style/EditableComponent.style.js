@@ -43,10 +43,8 @@ export const EditableComponent = styled.div`
         props.whiteText ? "rgb(245, 238, 214)" : "rgb(53, 20, 7)"};
       box-shadow: ${(props) =>
         props.whiteText ? "none" : "rgba(53, 20, 7, 0.2) 0px 0px 13px -2px"};
-      border-radius: ${(props) =>
-        props.whiteText ? "0" : "4px"};
-      background: ${(props) =>
-        props.whiteText ? "none" : "#fff"};
+      border-radius: ${(props) => (props.whiteText ? "0" : "4px")};
+      background: ${(props) => (props.whiteText ? "none" : "#fff")};
 
       &[readonly] {
         font-style: normal;
