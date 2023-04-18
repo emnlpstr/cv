@@ -64,8 +64,7 @@ export const EditableComponent = styled.div`
         resize: none;
         font-family: "Titillium Web", sans-serif;
         box-shadow: 0px 0px 13px -2px rgba(53, 20, 7, 0.2);
-        color: ${(props) =>
-          props.whiteText ? "rgb(245, 238, 214)" : "rgb(53, 20, 7)"};
+        color: rgb(53, 20, 7);
 
         &[readonly] {
           max-width: 94%;
