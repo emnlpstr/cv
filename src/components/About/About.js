@@ -7,8 +7,8 @@ export const About = () => {
   const { dataContext, setDataContext } = useContext(DataContext);
 
   return (
-    <EditableComponent style={{borderTop: "1px solid #000"}}>
-      <h2>About</h2>
+    <EditableComponent style={{borderTop: "1px solid rgb(53, 20, 7)"}}>
+      <h2 style={{color: "white"}}>About</h2>
       {dataContext.about.map((input) => {
         return (
           <EditableInput

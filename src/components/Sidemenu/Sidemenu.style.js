@@ -17,8 +17,9 @@ export const SidemenuStyle = styled.div`
         padding: 12px 10px;
 
         &:hover {
-          background: rgba(255, 255, 255, 0.2);
+          background: rgb(245, 238, 214);
           transition: 0.3s ease;
+          color: rgb(142, 60, 33);
         }
       }
     }

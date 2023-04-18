@@ -30,7 +30,6 @@ export const EditableInput = ({
 
   useEffect(() => {
     if (id === "info") {
-      console.log(id);
       if (editing) {
         setAboutInfoStyle(textareaStyle);
       } else setAboutInfoStyle(aboutInfoReadStyle);

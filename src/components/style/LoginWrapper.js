@@ -7,11 +7,12 @@ export const LoginWrapper = styled.div`
     position: absolute;
     width: 100%;
     left: 0;
-    bottom: -45px;
-    padding: 12px 24px;
-    background: #e5e8ee;
+    bottom: -76px;
+    padding: 22px 50px;
+    background: rgb(245, 238, 214);
     cursor: default;
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 15px -3px rgba(53, 20, 7, 0.1);
+    z-index: 99;
 
     @media (max-width: 634px) {
       flex-direction: column;

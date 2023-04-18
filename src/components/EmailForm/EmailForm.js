@@ -6,7 +6,7 @@ import { Textarea } from "../Input/Textarea";
 import { Backdrop } from "../style/Backdrop.style";
 
 const emailBtn = {
-  background: "rgb(191, 118, 80)",
+  background: "rgb(142, 60, 33)",
   position: "fixed",
   right: "5%",
   top: "280px",

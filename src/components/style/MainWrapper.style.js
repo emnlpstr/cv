@@ -9,7 +9,7 @@ export const MainWrapper = styled.div`
 
   .content {
     flex-basis: 70%;
-    background: #e5e8ee;
+    background: rgb(245, 238, 214);
     height: 100%;
     padding: 22px;
   }

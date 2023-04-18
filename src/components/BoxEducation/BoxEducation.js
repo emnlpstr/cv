@@ -6,7 +6,7 @@ import { ButtonLoginStyle } from "../style/Button.style";
 import { DataContext } from "../../context/dataContext/dataContext";
 
 const smallBtn = {
-  background: "rgb(191, 118, 80)",
+  background: "rgb(142, 60, 33)",
   justifySelf: "flex-end",
   width: "22px",
   height: "22px",

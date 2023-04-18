@@ -3,8 +3,10 @@ import styled from "styled-components";
 export const BoxEducationWrapper = styled.div`
   padding: 22px;
   border-radius: 26px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.8);
   display: grid;
+  background: transparent;
+  box-shadow: 0px 0px 13px -2px rgba(53, 20, 7 ,0.2);
 
   .box-education {
     display: grid;
@@ -39,7 +41,7 @@ export const BoxEducationWrapper = styled.div`
       padding: 5px 12px;
       border-radius: 100px;
       white-space: nowrap;
-      background: rgba(255, 255, 255, 0.6);
+      background: rgba(255, 255, 255, 0.8);
       margin: 5px 12px;
       align-items: center;
 

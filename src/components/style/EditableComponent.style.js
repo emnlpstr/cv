@@ -24,6 +24,8 @@ export const EditableComponent = styled.div`
     label {
       padding: 0 0 3px;
       display: inline-flex;
+      color: ${(props) =>
+        props.whiteText ? "rgb(245, 238, 214)" : "rgb(53, 20, 7)"};
     }
 
     input {
@@ -33,10 +35,11 @@ export const EditableComponent = styled.div`
       border: none;
       font-family: "Titillium Web", sans-serif;
       font-style: italic;
-      border-bottom: 1px solid #000;
+      border-bottom: 1px solid rgb(53, 20, 7);
       font-weight: 300;
       width: 100%;
-
+      color: ${(props) =>
+        props.whiteText ? "rgb(245, 238, 214)" : "rgb(53, 20, 7)"};
       &[readonly] {
         font-style: normal;
         background: none;
@@ -44,6 +47,8 @@ export const EditableComponent = styled.div`
         outline: none;
         cursor: default;
         font-weight: 400;
+        color: ${(props) =>
+          props.whiteText ? "rgb(245, 238, 214)" : "rgb(53, 20, 7)"};
       }
     }
 
@@ -52,17 +57,21 @@ export const EditableComponent = styled.div`
       flex-direction: column;
       align-items: flex-start;
       max-width: 100%;
-      
+
       textarea {
         width: 100%;
         max-width: 94%;
         resize: none;
         font-family: "Titillium Web", sans-serif;
-        
+        box-shadow: 0px 0px 13px -2px rgba(53, 20, 7, 0.2);
+        color: ${(props) =>
+          props.whiteText ? "rgb(245, 238, 214)" : "rgb(53, 20, 7)"};
+
         &[readonly] {
           max-width: 94%;
           background: none;
           border: none;
+          box-shadow: none;
         }
       }
     }

@@ -11,9 +11,9 @@ export const EmailFormStyle = styled.div`
     width: calc(100vw - 30%);
     height: 400px;
     z-index: 99;
-    background: rgb(191, 118, 80);
+    background: rgb(142, 60, 33);
     padding: 40px 80px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px;
+    box-shadow: rgba(53, 20, 7, 0.1) 0px 10px 15px -3px;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -32,7 +32,7 @@ export const EmailFormStyle = styled.div`
     }
 
     button[type="submit"] {
-      box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 23px 10px;
+      box-shadow: rgba(53, 20, 7, 0.8) 0px 0px 23px 10px;
     }
 
     textarea {

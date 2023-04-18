@@ -5,10 +5,10 @@ export const LanguagesStyle = styled.div`
   align-items: center;
 
   .custom-select * {
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(53, 20, 7, 0.8);
   }
 
   .custom-select svg {
-    fill: rgba(0, 0, 0, 0.3);
+    fill: rgba(53, 20, 7, 0.3);
   }
 `;

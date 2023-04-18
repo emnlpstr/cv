@@ -13,7 +13,7 @@ const header = {
   boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
   position: "sticky",
   top: "0",
-  background: "#E5E8EE",
+  background: "rgb(245, 238, 214)",
   zIndex: "9",
 };
 
@@ -21,11 +21,11 @@ const title = {
   fontSize: "36px",
   fontWeight: "700",
   textDecoration: "none",
-  color: "rgb(191, 118, 80)",
+  color: "rgb(142, 60, 33)",
 };
 
 const content = {
-  background: "#E5E8EE",
+  background: "rgb(245, 238, 214)",
 };
 
 const HomeLayout = ({ children }) => {
