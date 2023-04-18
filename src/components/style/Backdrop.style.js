@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Backdrop = styled.div`
   position: fixed;
   width: 100vw;
-  height: calc(100vh - 137px);
+  height: calc(100%);
   top: 137px;;
   left: 0;
   backdrop-filter: blur(10px);

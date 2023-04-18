@@ -14,7 +14,7 @@ const smallBtn = {
   width: "22px",
   height: "22px",
   padding: "0",
-  marginTop: "12px",
+  marginLeft: "12px",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
@@ -50,24 +50,26 @@ export const Languages = ({ content }) => {
     const newLanguages2 = dataContext.languages.filter(
       (language, languageIndex) => languageIndex !== index
     );
-    setDataContext({ ...dataContext, languages: newLanguages2});
+    setDataContext({ ...dataContext, languages: newLanguages2 });
   };
 
   return (
     <EditableComponent>
       <BoxEducationWrapper>
         <h2>Conoscenza lingue</h2>
-        {content.map((language, index) => {
+        {dataContext.languages.map((language, index) => {
           return (
-            <LanguagesStyle>
+            <LanguagesStyle style={{marginTop: "22px"}}>
               <EditableInput
                 value={language.label}
                 id={`language-${index}`}
                 type="text"
               />
               <Select
+                isDisabled={editing ? false : true}
                 options={language.options}
                 defaultValue={language.options[language.value]}
+                className="custom-select"
               ></Select>
               {editing && (
                 <ButtonLoginStyle

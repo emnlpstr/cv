@@ -17,3 +17,9 @@ body {
 .sr-only {
   display: none;
 }
+
+textarea {
+  border: none;
+  padding: 12px 16px;
+  border-radius: 4px;
+}

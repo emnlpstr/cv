@@ -11,6 +11,8 @@ import { BoxEducation } from "../components/BoxEducation/BoxEducation";
 import { Languages } from "../components/Languages/Languages";
 import { Skills } from "../components/Skills/Skills";
 import { DataContext } from "../context/dataContext/dataContext";
+import { MainWrapper } from "../components/style/MainWrapper.style";
+import { ProfilePicture } from "../components/ProfilePicture/ProfilePicture";
 
 const mainWrapper = {
   display: "flex",
@@ -28,17 +30,11 @@ const sticky = {
   padding: "22px",
 };
 
-const content = {
-  flexBasis: "70%",
-  background: "#E5E8EE",
-  height: "100%",
-  padding: "22px",
-};
-
 const sectionWrapper = {
   marginTop: "22px",
   transition: ".3s ease",
   scrollMarginTop: "100px",
+  scrollBehavior: "smooth",
 };
 
 export const Home = () => {
@@ -46,22 +42,30 @@ export const Home = () => {
   const [editing, setEditing] = useState(false);
   const [dataContext, setDataContext] = useState(homeContent);
 
+  const imagePath = "../images/ep_cv_pic.jpg"
+
   return (
     <EditingContext.Provider value={{ editing, setEditing }}>
       <EditContext.Provider value={{ edit, setEdit }}>
         <DataContext.Provider value={{ dataContext, setDataContext }}>
           <HomeLayout>
             <Container>
-              <div style={mainWrapper}>
+              <MainWrapper>
                 <div style={aside}>
                   <div style={sticky}>
                     <Sidemenu />
                     <About />
                   </div>
                 </div>
-                <div style={content}>
+                <div className="content">
+                  <section id="picture">
+                    <ProfilePicture />
+                  </section>
                   <section id="education" style={sectionWrapper}>
-                    <BoxEducation title="Formazione" />
+                    <BoxEducation
+                      content={homeContent.education}
+                      title="Formazione"
+                    />
                   </section>
                   <section id="professions" style={sectionWrapper}>
                     <BoxEducation
@@ -77,7 +81,7 @@ export const Home = () => {
                     <Skills content={homeContent.skills} />
                   </section>
                 </div>
-              </div>
+              </MainWrapper>
             </Container>
             <EmailForm />
           </HomeLayout>

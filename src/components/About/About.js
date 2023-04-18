@@ -7,7 +7,7 @@ export const About = () => {
   const { dataContext, setDataContext } = useContext(DataContext);
 
   return (
-    <EditableComponent>
+    <EditableComponent style={{borderTop: "1px solid #000"}}>
       <h2>About</h2>
       {dataContext.about.map((input) => {
         return (
@@ -16,6 +16,7 @@ export const About = () => {
             value={input.value}
             label={input.label}
             type={input.type}
+            whiteText={true}
           ></EditableInput>
         );
       })}

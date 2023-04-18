@@ -51,17 +51,16 @@ export const EditableComponent = styled.div`
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      height: 200px;
       max-width: 100%;
-      max-height: 200px;
-
+      
       textarea {
         width: 100%;
-        height: 200px;
+        max-width: 94%;
         resize: none;
         font-family: "Titillium Web", sans-serif;
-
+        
         &[readonly] {
+          max-width: 94%;
           background: none;
           border: none;
         }

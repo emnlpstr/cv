@@ -14,6 +14,7 @@ const header = {
   position: "sticky",
   top: "0",
   background: "#E5E8EE",
+  zIndex: "9",
 };
 
 const title = {

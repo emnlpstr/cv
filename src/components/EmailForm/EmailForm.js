@@ -32,7 +32,7 @@ export const EmailForm = () => {
       </ButtonLoginStyle>
       {isOpened && (
         <Backdrop
-          style={{ top: "95px", height: "calc(100vh - 95px)" }}
+          style={{ top: "95px", height: "100%" }}
           onClick={() => setIsOpened(false)}
         />
       )}

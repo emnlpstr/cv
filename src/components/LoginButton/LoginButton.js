@@ -12,15 +12,11 @@ const LoginButton = () => {
     setIsOpened(false);
   };
 
-  const openHandler = (event) => {
-    setIsOpened(true);
-  };
-
-  const { edit, setEdit } = useContext(EditContext);
+  const { setEdit } = useContext(EditContext);
 
   return (
     <LoginWrapper>
-      <ButtonLoginStyle onClick={() => openHandler()}>
+      <ButtonLoginStyle onClick={() => setIsOpened(!isOpened)}>
         <svg
           className="icon"
           version="1.1"

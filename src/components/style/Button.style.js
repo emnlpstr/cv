@@ -21,7 +21,7 @@ export const ButtonStyle = styled.button`
 
 export const ButtonLoginStyle = styled.button`
   border: none;
-  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 13px 3px;
   width: 52px;
   height: 52px;
   border-radius: 100%;

@@ -40,7 +40,7 @@ export const homeContent = {
       id: "info",
       label: "Ulteriori informazioni",
       value:
-        "Mi ritengo una persona responsabile, capace di impegnarsi con entusiasmo e motivazione su tutto ciò che mi si presenti come un’occasione per migliorare me stesso e ampliare le mie conoscenze. So lavorare ad un progetto identificandomi totalmente in un team e mi trovo a mio agio nello svolgimento di compiti individuali.",
+        "Mi ritengo una persona responsabile, mi impegno con entusiasmo sulle occasioni di migliorare me stesso e ampliare le mie conoscenze. So lavorare ad un progetto identificandomi totalmente in un team e mi trovo a mio agio nello svolgimento di compiti individuali.",
       type: "textarea",
     },
   ],

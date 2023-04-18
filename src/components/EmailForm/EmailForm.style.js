@@ -18,11 +18,34 @@ export const EmailFormStyle = styled.div`
     flex-direction: column;
     gap: 16px;
 
+    @media (max-width: 375px) {
+      padding: 40px 36px;
+    }
+
     .btn-close {
       position: fixed;
       right: 5%;
       top: 280px;
       border-radius: 100%;
+      width: 32px;
+      height: 32px;
+    }
+
+    button[type="submit"] {
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 23px 10px;
+    }
+
+    textarea {
+      max-width: 97%;
+      resize: vertical;
+
+      @media (max-width: 768px) {
+        max-width: 95%;
+      }
+
+      @media (max-width: 375px) {
+        max-width: 90%;
+      }
     }
   }
 `;

@@ -6,5 +6,12 @@ module.exports = {
     title: `cv`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: ["gatsby-plugin-styled-components", "gatsby-plugin-sitemap"],
-};
+  plugins: ["gatsby-plugin-styled-components", "gatsby-plugin-sitemap",],
+}
+
+;module.exports = {
+  plugins: [
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+  ],
+}
