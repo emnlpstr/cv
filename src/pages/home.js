@@ -20,7 +20,7 @@ const mainWrapper = {
 
 const aside = {
   flexBasis: "30%",
-  background: "#bf7650",
+  background: "rgb(142, 60, 33)",
   minHeight: "100%",
 };
 

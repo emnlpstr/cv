@@ -32,7 +32,7 @@ export const EmailFormStyle = styled.div`
     }
 
     button[type="submit"] {
-      box-shadow: rgba(53, 20, 7, 0.8) 0px 0px 23px 10px;
+      box-shadow: rgba(53, 20, 7, 0.4) 0px 0px 13px 10px;
     }
 
     textarea {

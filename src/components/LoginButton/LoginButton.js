@@ -31,10 +31,16 @@ const LoginButton = () => {
         <>
           <Backdrop onClick={() => closeHandler()} />
           <div className="user-form">
-            <Input id="username-login" placeholder="username" type="text" />
-            <Input id="password-login" placeholder="Password" type="password" />
-            <ButtonStyle onClick={() => setEdit(true)}>Login</ButtonStyle>
-            <ButtonStyle onClick={() => setEdit(false)}>Logout</ButtonStyle>
+            <div className="user-form__wrapper">
+              <Input id="username-login" placeholder="username" type="text" />
+              <Input
+                id="password-login"
+                placeholder="Password"
+                type="password"
+              />
+              <ButtonStyle onClick={() => setEdit(true)}>Login</ButtonStyle>
+              <ButtonStyle onClick={() => setEdit(false)}>Logout</ButtonStyle>
+            </div>
           </div>
         </>
       ) : (
