@@ -31,6 +31,22 @@ export const ButtonLoginStyle = styled.button`
   cursor: pointer;
   transition: 0.3s ease;
 
+  &.delete-btn {
+    background: rgb(142, 60, 33);
+    justify-self: flex-end;
+    width: 22px;
+    height: 22px;
+    padding: 0;
+    margin-left: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      position: absolute;
+    }
+  }
+
   &:hover {
     background: #f2f3f5;
     transition: 0.3s ease;

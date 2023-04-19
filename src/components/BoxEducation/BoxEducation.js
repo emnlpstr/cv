@@ -76,7 +76,7 @@ export const BoxEducation = ({ title, professions }) => {
           <div className="box-education" key={index}>
             {editing && (
               <ButtonLoginStyle
-                style={smallBtn}
+                className="delete-btn"
                 onClick={(event) => deleteHandler(event, index)}
               >
                 <svg version="1.1" width="12" height="12" viewBox="0 0 16 16">

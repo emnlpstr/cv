@@ -59,7 +59,7 @@ export const Languages = ({ content }) => {
         <h2>Conoscenza lingue</h2>
         {dataContext.languages.map((language, index) => {
           return (
-            <LanguagesStyle style={{marginTop: "22px"}}>
+            <LanguagesStyle>
               <EditableInput
                 value={language.label}
                 id={`language-${index}`}
@@ -73,7 +73,7 @@ export const Languages = ({ content }) => {
               ></Select>
               {editing && (
                 <ButtonLoginStyle
-                  style={smallBtn}
+                  className="delete-btn"
                   onClick={(event) => {
                     deleteHandler(event, index);
                   }}
